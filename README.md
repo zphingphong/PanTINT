@@ -12,3 +12,5 @@ Known issues
 - The infinity scroll doesn't work beautifully on window resize. It sometimes keep loading the whole page.
 - Has not implemented all the icons, only 1 (Facebook) - 5 (Pinterest)
 - Only log error for now. We should display user relevant error to the user, and non-relevant to Rollbar.
+- For higher resolution screen to begin with we should load more tiles to fill the page on the first load. At the moment it will only load half of the page.
+- We should have it animated auto-scroll.
