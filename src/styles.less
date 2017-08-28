@@ -1,0 +1,36 @@
+body{
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+  overflow-x: hidden;
+  width: 100%;
+}
+.tile-row{
+  position: relative;
+  .tile-item{
+    display: inline-block;
+    .content{
+      margin: 0 80px;
+    }
+    &:first-child{
+      .content{
+        margin-left: -90px;
+      }
+    }
+    &:last-child{
+      .content{
+        margin-right: 0;
+      }
+    }
+  }
+  &:nth-child(odd){
+    top: 0px;
+    left: 0px;
+    margin-top: -135px;
+  }
+  &:nth-child(even) {
+    top: -130px;
+    left: 230px;
+    margin-bottom: -260px;
+  }
+  top:0;
+  left: 0;
+}

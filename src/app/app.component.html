@@ -1,0 +1,11 @@
+<div infinite-scroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="800" (scrolled)="loadMoreTiles()">
+  <div *ngFor="let tilesRow of formattedTiles" class="tile-row">
+    <div *ngFor="let tile of tilesRow" class="tile-item">
+      <app-tile [data]="tile"></app-tile>
+    </div>
+  </div>
+</div>
+
+<!--<div *ngFor="let tint of tints" (scrolled)="onScroll()">-->
+  <!--<app-tile [data]="tint"></app-tile>-->
+<!--</div>-->

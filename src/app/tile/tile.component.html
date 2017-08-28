@@ -1,0 +1,23 @@
+<div class="content">
+  <div class="tile">
+    <div class="item">
+      <div class="description">
+        <div class="icon icon-{{data.source}}"></div>
+        <div class="thumbnail">
+          <img src="{{author.picture}}">
+        </div>
+        <div class="detail">
+          <p>{{data.comments}}</p>
+        </div>
+      </div>
+      <div class="hexagon">
+        <div class="hexagon-in1">
+          <div class="hexagon-in2" [ngStyle]="{'background': 'url(' + data.image + ') top center no-repeat'}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div>{{data.source}}</div>-->
+  <!--<div>{{author.name}}</div>-->
+  <!--<div>{{author.picture}}</div>-->
+</div>
