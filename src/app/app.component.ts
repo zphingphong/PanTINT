@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
     this.loadTiles();
   }
 
+  // Load the first set of tiles
   private loadTiles() {
     this.tintService.retrieveFirst().subscribe(
       data => {
@@ -49,6 +50,7 @@ export class AppComponent implements OnInit {
     this.loadTiles();
   }
 
+  // Load more tiles, if there's any
   loadMoreTiles () {
     var retrieveMoreReturn = this.tintService.retrieveMore();
     if(retrieveMoreReturn) {
